@@ -56,7 +56,7 @@ end
 def rtn_ss_name(base_file_name)
   dir_name = './screenshot'
 
-  unless Dir.exist?(dir_name) then
+  unless Dir.exist?(dir_name)
     Dir.mkdir(dir_name)
   end
   
