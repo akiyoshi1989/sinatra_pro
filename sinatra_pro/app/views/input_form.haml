@@ -6,22 +6,22 @@
   %h1 input page
   %form{:action => '/confirm', :method => 'post'}
     %p
-      %label Name:
+      %label 名前:
     %p
       %input{:name => "sender_name", :type => "text"}
     %p  
-      %label Age:
+      %label 年代:
     %p 
       %select{:name => "age", :size => "1"}
         %option{:value => ""} --
-        %option{:value => "10"} 10s
-        %option{:value => "20"} 20s
-        %option{:value => "30"} 30s
-        %option{:value => "40"} 40s
-        %option{:value => "50"} 50s
-        %option{:value => "60"} 60s over
+        %option{:value => "10代"} 10代
+        %option{:value => "20代"} 20代
+        %option{:value => "30代"} 30代
+        %option{:value => "40代"} 40代
+        %option{:value => "50代"} 50代
+        %option{:value => "60代以上"} 60代以上
     %p  
-      %label Free entry field:
+      %label 自由記述欄:
     %p  
       %textarea{:name => "free_form", :type => "text"}
     %p  

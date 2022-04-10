@@ -1,2 +1,57 @@
 !!!
-%h1 send completely
+%head
+  %title LONG PAGE SAMPLE
+  %link(rel="stylesheet" href="css/styles.css")
+%body
+  %h1 LONG PAGE SAMPLE
+  %form{:action => '/confirm', :method => 'post'}
+    %p
+    %label 名前:
+    %p
+    %input{:name => "sender_name", :type => "text"}
+    %p  
+    %label 年代:
+    %p 
+    %select{:name => "age", :size => "1"}
+      %option{:value => ""} --
+      %option{:value => "10代"} 10代
+      %option{:value => "20代"} 20代
+    %p  
+    %label 趣味:
+    %p 
+    %input{:name => "sender_name", :type => "text"}
+    %p
+    %label 住所:
+    %p
+    %input{:name => "sender_name", :type => "text"}
+    %p
+    %label メールアドレス:
+    %p
+    %input{:name => "sender_name", :type => "text"}
+    %p
+    %label 電話番号:
+    %p
+    %input{:name => "sender_name", :type => "text"}
+    %p  
+    %label 自由記述欄１:
+    %p  
+    %textarea{:name => "free_form", :type => "text"}
+    %p  
+    %p  
+    %label 自由記述欄２:
+    %p  
+    %textarea{:name => "free_form", :type => "text"}
+    %p  
+    %p  
+    %label 自由記述欄３:
+    %p  
+    %textarea{:name => "free_form", :type => "text"}
+    %p  
+    %p  
+    %label 自由記述欄４:
+    %p  
+    %textarea{:name => "free_form", :type => "text"}
+    %p  
+    %input{:class => "btn", :type => "submit", :value => "confirm"}
+
+
