@@ -1,0 +1,19 @@
+!!!
+%head
+  %title CONFIRM PAGE
+  %link(rel="stylesheet" href="css/styles.css")
+%body
+  %h1 confirm page
+  %form{:action => '/complete', :method => 'post'}
+    %fieldset
+      %p
+        %label name: 
+      %p
+        = @sender_name
+      %p  
+        %label Free entry field:
+      %p
+        =@free_form
+      %p  
+        %input{:name => "btn_value", :type => "submit", :value => "back"}
+        %input{:name => "btn_value", :type => "submit", :value => "submit"}

@@ -1,0 +1,17 @@
+body {
+  background-color: aliceblue;
+}
+label {
+  width: 30px;
+  color: red;
+}
+
+input textarea {
+  font-size: 18px;
+}
+
+textarea {
+  resize: none;
+  width:300px;
+  height:200px;
+}

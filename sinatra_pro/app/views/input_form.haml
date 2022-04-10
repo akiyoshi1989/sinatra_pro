@@ -1,0 +1,18 @@
+!!!
+%head
+  %title INPUT PAGE
+  %link(rel="stylesheet" href="css/styles.css")
+%body
+  %h1 input page
+  %form{:action => '/confirm', :method => 'post'}
+    %p
+      %label name:
+    %p
+      %input{:name => "sender_name", :type => "text"}
+    %p  
+      %label Free entry field:
+    %p  
+      %textarea{:name => "free_form", :type => "text"}
+    %p  
+      %input{:class => "btn", :type => "submit", :value => "confirm"}
+
