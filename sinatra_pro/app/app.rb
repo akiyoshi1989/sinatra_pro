@@ -13,6 +13,7 @@ end
 
 post '/confirm' do
   @sender_name = params[:sender_name]
+  @age = params[:age]
   @free_form = params[:free_form]
   haml :confirm
 end

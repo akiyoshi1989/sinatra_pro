@@ -6,9 +6,20 @@
   %h1 input page
   %form{:action => '/confirm', :method => 'post'}
     %p
-      %label name:
+      %label Name:
     %p
       %input{:name => "sender_name", :type => "text"}
+    %p  
+      %label Age:
+    %p 
+      %select{:name => "age", :size => "1"}
+        %option{:value => ""} --
+        %option{:value => "10"} 10s
+        %option{:value => "20"} 20s
+        %option{:value => "30"} 30s
+        %option{:value => "40"} 40s
+        %option{:value => "50"} 50s
+        %option{:value => "60"} 60s over
     %p  
       %label Free entry field:
     %p  
